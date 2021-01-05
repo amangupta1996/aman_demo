@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4e90e7;
+      }
+
+      .cls-2 {
+        fill: #034aa6;
+      }
+    </style>
+  </defs>
+  <g id="icon_home_inactive" transform="translate(-34 -103)">
+    <rect id="Rectangle_3338" data-name="Rectangle 3338" class="cls-1" width="45" height="45" rx="12" transform="translate(34 103)"/>
+    <path id="Icon_material-home" data-name="Icon material-home" class="cls-2" d="M12.806,25.338V17.983h4.9v7.355h6.129V15.532h3.677L15.258,4.5,3,15.532H6.677v9.806Z" transform="translate(40 109.5)"/>
+  </g>
+</svg>

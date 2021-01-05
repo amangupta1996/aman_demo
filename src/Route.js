@@ -2,13 +2,14 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import * as RoutePath from './shared/utils/routeLink';
 import Loadable from 'react-loadable';
+import MainComponent from './container/MainComponent/MainComponet';
 
-const MainComponent = Loadable({
-    loader: () => import('./container/MainComponent/MainComponet'),
-    loading() {
-        return <div>Loading...</div>;
-    },
-});
+// const MainComponent = Loadable({
+//     loader: () => import('./container/MainComponent/MainComponet'),
+//     loading() {
+//         return <div>Loading...</div>;
+//     },
+// });
 
 const Router = () => {
     return (

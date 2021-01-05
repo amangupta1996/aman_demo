@@ -1,0 +1,57 @@
+name: Development Workflow
+on:
+  workflow_dispatch:
+    branches:
+      - Development
+# Manual workflow on push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+       
+    steps:
+     - uses: actions/checkout@v1
+     - name: Use Node.js ${{ matrix.node-version }}
+       uses: actions/setup-node@v1
+       with:
+         node-version: ${{ matrix.node-version }}
+     - name: Build static site
+       run: npm install && npm run build:dev && pwd && ls -ltrh
+       # Share artifact inside workflow
+     - name: Share artifact inside workflow
+       uses: actions/upload-artifact@v1
+       with:
+         name: react-github-actions-build
+         path: build
+       # Download previously shared build
+     - name: Get artifact
+       uses: actions/download-artifact@v1
+       with:
+         name: react-github-actions-build
+         path: ./react-github-actions-build
+     - name: Configure AWS Credentials
+       uses: aws-actions/configure-aws-credentials@v1
+       with:
+         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+     - name: Deploy static site to S3 bucket
+       run: pwd && ls -altrh && aws s3 sync ./ s3://${{ secrets.AWS_S3_BUCKET_DEV }} --acl=public-read --delete --exclude '.git/*'
+       working-directory: react-github-actions-build
+     - name: Clear CloudFront CDN Distribution
+       run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID_DEV }} --paths /\*
+# Cleanjob       
+  cleanup_job:
+    needs: [build]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+    - name: call webhook to delete artifacts
+      env:
+        FOR_WEBHOOKS_SECRET: ${{ secrets.FOR_WEBHOOKS_SECRET }}
+      run: |
+        echo "::add-mask::$FOR_WEBHOOKS_SECRET"
+        curl --verbose --fail --show-error --location --request POST "https://api.github.com/repos/$GITHUB_REPOSITORY/dispatches" --header "Authorization: token $FOR_WEBHOOKS_SECRET" --header 'Content-Type: application/json' --header 'Accept: application/vnd.github.everest-preview+json' --data-raw "{ \"event_type\": \"delete_all_artifacts\", \"client_payload\": {\"parent_runid\": \"$GITHUB_RUN_ID\", \"parent_repo\": \"$GITHUB_REPOSITORY\"} }"

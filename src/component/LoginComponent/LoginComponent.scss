@@ -1,0 +1,104 @@
+.error-box{
+    color: red;
+    font-size: 0.8em;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+.margin-t-0{
+    margin-top:0;
+}
+.logoClass{
+    max-width: 100%;
+}
+.awssld{
+    max-width: 85% !important;
+}
+.awssld__container{
+    padding-bottom: 100% !important;
+}
+.awssld__content{
+    width: 100%;
+    background-color: transparent !important;
+}
+.awssld__timer--run{
+    display: none !important;
+}
+.sliderContent{
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+    & .sliderContentHeading{
+        font-size: 1.5em;
+        color: #002150;
+        font-weight: 600;
+    }
+    & .sliderContentText{
+        font-size: 0.85em;
+        color: #002150;
+    }
+}
+.formContainer{
+    background: #E7ECED;
+    box-shadow: 0 3px 17px rgba(0, 0, 0, 0.26);
+    width: 85%;
+    float: right;
+    border-radius: 0.5em;
+    padding: 2em 3em !important;
+    & label{
+        color: gray;
+        margin-bottom: 0;
+    }
+    & input{
+        border: 1px solid #9F9F9F;
+        padding: 0.6em 0.5em !important;
+        height: auto !important;
+        line-height: auto !important;
+        background: white !important;
+    }
+    & button{
+        background: #488BFF;
+        padding: 0.6em 0.5em !important;
+        border-radius: 0.25em;
+        width: 100%;
+        color: white;
+        font-weight: 600;
+        margin-top: 0.5em;
+    }
+}
+.formHeadingDescription{
+    font-size: 0.4em;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.formHeading{
+    font-size: 2.3em;
+    font-weight: 900;
+    margin-bottom: 0.45em;
+}
+.width100P{
+    width: 100%;
+}
+.leftSideBox,
+.rightSideBox{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.forgorPassword{
+    width: 100%;
+    float: left;
+    text-align: right;
+    margin-bottom: 1em;
+}
+.linkText{
+    font-weight: 600;
+    color: #488BFF;
+}
+.centerTextToOtherPage{
+    margin-top: 1em;
+    text-align: center;
+}

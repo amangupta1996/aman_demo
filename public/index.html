@@ -3,40 +3,39 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#f0f0f0" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-    <title>Index</title>
+    <title>Portal Murid</title>
+
+    <link rel="shortcut icon" href="./portal_murid.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-resolution-switcher/0.4.2/videojs-resolution-switcher.js"></script>
+    <script src="./../node_modules/video.js/dist/video.min.js"></script>
+    <script src="./../node_modules/videojs-hls-quality-selector/dist/videojs-hls-quality-selector.min.js"></script>
+    
 </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <link href="//vjs.zencdn.net/6.1.0/video-js.css" rel="stylesheet">
-    
-    <script type = "text/javascript">
-         
-        //prefixes of implementation that we want to test
-        window.indexedDB = window.indexedDB || window.mozIndexedDB || 
-         window.webkitIndexedDB || window.msIndexedDB;
-         
-         //prefixes of window.IDB objects
-         window.IDBTransaction = window.IDBTransaction || 
-         window.webkitIDBTransaction || window.msIDBTransaction;
-
-         window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || 
-         window.msIDBKeyRange
-         
-         if (!window.indexedDB) {
-            window.console.log("Your browser doesn't support a stable version of IndexedDB.")
-         }
-         
-         
-      
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        // document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 </body>
-
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
 </html>

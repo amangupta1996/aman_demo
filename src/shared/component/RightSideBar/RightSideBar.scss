@@ -1,0 +1,62 @@
+@import './../../../colorvariable.scss';
+.fullHeight{
+    height: 100%;
+}
+.right-nav li{
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 0 0.5em 0.5em 0;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    &.active{
+        background: #D5E1E5;
+        & a{
+            &:hover{
+                font-weight: normal;
+            }
+        }
+    }
+    & a{
+        &:hover{
+            color: #000;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+    }
+}
+.list{
+    & div{
+        cursor: pointer;
+    }
+}
+.shodowBox{
+    box-shadow: 0 0 0.8em 2px #bbb !important;
+}
+.content-sidebar-nav{
+    position: fixed;
+    top: 46px;
+    height: calc(100vh - 46px);
+    right: 3em;
+    width: 450px;
+    background: #fff;
+    box-shadow: $Colorshadow;
+    border-radius: 0.5em 0 0 0.5em;
+    overflow: auto;
+}
+.rightBox{
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    right:0;
+    top: calc((100vh - 3em ) / 2);
+    z-index: 1;
+}
+.icon-glosarium{
+    width: 2.8em;
+    height: 2.8em;
+    border: 0.1em solid white;
+    box-shadow: $Colorshadow;
+    background: no-repeat url(../../../assets/icon/sidebar/Glosarium.png) center;
+    background-color: $themeBlue;
+}

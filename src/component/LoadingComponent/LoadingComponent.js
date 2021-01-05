@@ -1,12 +1,11 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
 const LoadingComponent = () => {
     return (
-        <Grid>
-            <Grid.Row>
-                <Grid.Column verticalAlign="middle">Loading...</Grid.Column>
-            </Grid.Row>
-        </Grid>
+        <div className="container">
+            <div className="row">
+                <div className="col" verticalAlign="middle">Loading...</div>
+            </div>
+        </div>
     );
 };
 export default LoadingComponent;

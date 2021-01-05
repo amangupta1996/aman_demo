@@ -1,314 +1,243 @@
-import React from 'react'
-import cookies from 'react-cookies'
-import { Grid, Button, Container, Input } from 'semantic-ui-react'
-// import TopHeader from "../../container/TopHeader/TopHeader";
-import './LoginComponent.css'
-import { withRouter } from 'react-router-dom'
-import * as RoutePath from '../../shared/utils/routeLink'
-import image2 from '../../assets/images/home-default-1-960x640.jpg'
-import image3 from '../../assets/images/home-default-2-652x491.jpg'
-import Videojs from './video.js'
-let db;
-const employeeData = [
-  { id: "00-01", name: "gopal", age: 35, email: "gopal@tutorialspoint.com" },
-  { id: "00-02", name: "prasad", age: 32, email: "prasad@tutorialspoint.com" }
-];
-let request = window.indexedDB.open("newDatabase", 1);
-
-request.onerror = (event) => {
-    console.log("error: ");
-};
-
-request.onsuccess = (event) => {
-    db = request.result;
-    console.log("success: "+ db);
-};
-
-request.onupgradeneeded = (event) => {
-    var db = event.target.result;
-    var objectStore = db.createObjectStore("employee", {keyPath: "id"});
-    
-    for (var i in employeeData) {
-      objectStore.add(employeeData[i]);
-    }
-}
-
-const videoJsOptions = {
-  html5: {
-    hls: {
-      overrideNative: true
-    }
-  },
-  autoplay: true,
-  playbackRates: [0.5, 1, 1.25, 1.5, 2],
-  controls: true,
-  sources: [
-    {
-      src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-      type: 'video/mp4'
-    }
-  ]
-}
-
+import React from "react";
+import cookies from "react-cookies";
+import "./LoginComponent.scss";
+import makeRequest from "../../shared/utils/request";
+import {
+  generateRequestOptions,
+  homeUrl,
+} from "../../shared/utils/apiEndPoints";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import { isEmpty } from "../../shared/utils/check";
+import * as RoutePath from "../../shared/utils/routeLink";
+import * as ActionTypes from "../../store/actions/actionTypes";
+import SliderComponent from "../../shared/component/SliderComponent/SliderComponent";
 
 class LoginComponent extends React.Component {
   state = {
-    firstBlock: {
-      title: 'The Power of Bootstrap Toolkit',
-      content: 'We heve made a huge effort to provide you with the extreme power of site building via Bootstrap Toolkit. It is one of the most modern and flexible solutions for everyone who wants their website working properly and according to the latest standards.'
-    },
-    secondBlock: {
-      title: 'Content Driven Design',
-      content: 'Unlike many other templates, Monstroid² is built around user content but not vice versa. Thus you may be sure when you add your own texts and images the template will look same cool and appealing.'
+    userId: "",
+    password: "",
+    disableButton: false,
+    isShowPassword: false,
+  };
+  credentialHandler = (event) => {
+    this.setState({
+      [`${event.target.name}`]: event.target.value,
+    });
+    // setErrorText("")
+  };
 
+  componentDidMount() {
+    // if (
+    //     !isEmpty(cookies.load('dianauthtoken', { domain: homeUrl }))
+    // ) {
+    //     this.props.history.push(this.props.history.location.pathname);
+    // } else {
+    //     this.props.history.push(RoutePath.SIGNIN);
+    // }
+  }
+
+  handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      this.set_login();
     }
-  }
+  };
 
-  componentDidMount () {
-    
-  }
+  logIn = async () => {
+    let data = {
+      login: this.state.userId,
+      password: this.state.password,
+    };
 
-  redirectHandler = name => {
+    console.log(data);
+    if (!data.login || !data.password) {
+      this.setState({
+        disableButton: false,
+        errorMessage: "Fill All Details Correctly",
+      });
+    } else {
+      this.setState({ disableButton: true, responseMessage: false });
+      let res = await makeRequest({
+        ...generateRequestOptions("logIn"),
+        headers: {
+          Accept: "application/json",
+          "content-type": "application/json",
+        },
+        body: data,
+        json: true,
+      });
+      console.log(res);
+      if (res.code === 200) {
+        if (res.data.role === "student") {
+          this.props.dispatch_loginSucceed(res.data);
+          this.redirectHandler(RoutePath.DASHBOARD);
+        } else {
+          this.setState({
+            errorMessage: "You are not a student",
+            disableButton: false,
+            responseMessage: true,
+          });
+        }
+      } else {
+        this.setState({
+          errorMessage: res.message,
+          disableButton: false,
+          responseMessage: true,
+        });
+      }
+
+      this.setState({ disableButton: false });
+    }
+  };
+
+  redirectHandler = (name) => {
     if (this.props.history.location.pathName !== name) {
       switch (name) {
-        case RoutePath.DASHBOARD: {
-          this.props.history.push(RoutePath.DASHBOARD)
-          break
+        case RoutePath.SIGNIN: {
+          this.props.history.push(RoutePath.SIGNIN);
+          break;
         }
-        case RoutePath.SECONDPAGE: {
-          this.props.history.push(RoutePath.SECONDPAGE)
-          break
+        case RoutePath.DASHBOARD: {
+          this.props.history.push(RoutePath.DASHBOARD);
+          break;
         }
         default: {
         }
       }
     }
-  }
+  };
 
-  add = () => {
+  goToDashboard = () => {
+    this.redirectHandler(RoutePath.DASHBOARD);
+  };
 
-    console.log('adding data');
-     var request = db.transaction(["employee"], "readwrite")
-     .objectStore("employee")
-     .add({ id: "00-03", name: "Kenny", age: 19, email: "kenny@planet.org" });
-     
-     request.onsuccess = (event) => {
-        console.log("Kenny has been added to your database.");
-     };
-     
-     request.onerror = (event) => {
-        console.log("Unable to add data\r\nKenny is aready exist in your database! ");
-     }
-  }
-  
-  remove = () => {
-     var request = db.transaction(["employee"], "readwrite")
-     .objectStore("employee")
-     .delete("00-03");
-     
-     request.onsuccess = (event) => {
-        console.log("Kenny's entry has been removed from your database.");
-     };
-  }
+  inputHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
-  inputHandler = event => {
-    this.setState({ [event.target.name]: event.target.value })
-  }
+  enterPressed = (event) => {
+    const code = event.keyCode || event.which;
+    if (code === 13) {
+      //13 is the enter keycode
+      this.logIn();
+    }
+  }; // end enterPressed
 
-  redirect = () => {
-
-  }
-
-  getCustomData = () => {
-    let shownData = [1,2,3,4,5,6,7,8,9,0];
-
-    this.setState({
-      shownData
-    })
-  }
-
-  render () {
-    const { videoLink } = this.state
+  render() {
+    const {
+      errorMessage,
+      responseMessage,
+      userId,
+      isShowPassword,
+      password,
+    } = this.state;
     return (
-      <Container fluid>
-        <Grid columns={1}>
-          <Grid.Row>
-            <Grid.Column className="videoContainer">
-              <Videojs {...videoJsOptions} />
-              {/* <video
-                style={{ width: '100%' }}
-                controls
-                autoPlay
-              >
-                <source src={videoLink} type='video/mp4' />
-              </video> */}
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row className="firstBlock">
-            <Grid.Column centered>
-              <h1 className="headingFirst">Consistency is the key</h1>
-            </Grid.Column>
-            <Grid.Column>
-              <button onClick ={() => this.redirectHandler(RoutePath.SECONDPAGE)}>Redirect </button>
-              <button onClick ={() => this.add()}>Add data </button>
-              <button onClick ={() => this.remove()}>Delete data </button>
-              <button onClick={() => {
-                this.getCustomData()
-              }}>Get Custom Data</button>
-            </Grid.Column>
-            <Grid.Column>
-              {this.state.shownData && <ul>
-                  {this.state.shownData.map(element => {
-                    return <li> custom number {element}</li>
-                  })}
-                </ul>}
-            </Grid.Column>
-            <Grid.Column>
-              <div className="firstColumnWidth">Monstroid² boasts clean and crispy design, bulletproof layout
-              consistency and intuitive navigation. The template was created by
-              top industry leaders in web design and user experience. Improve
-              your audience engagement and loyalty with simple and user friendly
-              tools offered by our template.</div>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Grid columns={2}>
-          <Grid.Row className="flexBox noPad">
-            <Grid.Column className="noPad">
-              <Grid columns={1} className="noMar secondBlock">
-                <Grid.Row className="">
-                  <Grid.Column className="bootstrapPowerTitle">{this.state.firstBlock.title}</Grid.Column>
-                  <Grid.Column className="bootstrapPowerText">
-                    {this.state.firstBlock.content}
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Grid.Column>
-            <Grid.Column className="noPad">
-              <img src={image2} />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Grid stackable columns={2} className="padding-t-b-5">
-          <Grid.Row className="flexBox noPad">
-            <Grid.Column className="noPad rightSideImage">
-              <img src={image3} />
-            </Grid.Column>
-            <Grid.Column className="noPad">
-              <Grid columns={1} className="noMar thirdBlock">
-                <Grid.Row className="">
-                  <Grid.Column className="bootstrapPowerTitle">{this.state.secondBlock.title}</Grid.Column>
-                  <Grid.Column className="bootstrapPowerText">
-                    {this.state.secondBlock.content}
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Grid columns={1}>
-          <Grid.Row>
-              <Grid.Column>
-                    <div className="parallax-container bg-image rd-parallax-light" data-parallax-img="images/parallax-01.jpg">
-                        <div className="parallax material-parallax parallax">
-                          <img src="images/parallax-01.jpg" alt="" className="parallelBox" />
-                        </div>
-                        <div className="parallax-content">
-                            <div className="container section-xxl textCenter">
-                                <h2 className="parallax_heading">Like What We Offer?</h2>
-                                <p className="parallax-text">Start with this demo now or check out the others to choose what you need.</p>
-                                <a className="enrollButton" href="#">Enroll Now</a>
-                            </div>
-                        </div>
-                    </div>
-              </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Grid columns={1} className="padding-t-b-5">
-          <Grid.Row className="flexBox noPad letterSubscribe">
-            <Grid.Column className="bootstrapPowerTitle textCenter">
-              Get the latest news delivered daily!
-              <br />
-              We will send you breaking news right to your inbox.
-            </Grid.Column>
-            <Grid.Column className="textCenter">
-              <input type='text' className="inputBox" placeholder="Enter your email id..." />
-              <button className="submitButton">submit</button>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Container fluid className="footerBlock">
-          <Container>
-            <Grid>
-              <Grid.Row>
-                <Grid.Column>
-                  <Grid columns={4}>
-                    <Grid.Row>
-                      <Grid.Column>
-                        <div className="footerHeading">About</div>
-                        <div>
-                          Monstroid² is HTML template that fits both developers and
-                          beginners. It comes loaded with an assortment of tools and
-                          features that make customization process much easier. A
-                          pack of child themes, specially designed for various
-                          business niches, allows users to create a fully functional
-                          site for any specific business quickly and worry-free.
-                        </div>
-                      </Grid.Column>
-                      <Grid.Column>
-                        <div className="footerHeading">Navigation</div>
-                        <div>
-                          <ul className="footerNavs">
-                            <li>About</li>
-                            <li>About</li>
-                            <li>About</li>
-                            <li>About</li>
-                            <li>About</li>
-                          </ul>
-                        </div>
-                      </Grid.Column>
-                      <Grid.Column>
-                        <div className="footerHeading">Recent Comments</div>
-                        <div>
-                          <span>Brian Williamson on</span>
-
-                          <span>
-                            Site Speed and Search Engines Optimization Aspects
-                          </span>
-                        </div>
-                        <div>
-                          <span>Brian Williamson on</span>
-
-                          <span>
-                            Site Speed and Search Engines Optimization Aspects
-                          </span>
-                        </div>
-                        <div>
-                          <span>Brian Williamson on</span>
-
-                          <span>
-                            Site Speed and Search Engines Optimization Aspects
-                          </span>
-                        </div>
-                      </Grid.Column>
-                      <Grid.Column>
-                        <div className="footerHeading">Contacts</div>
-                        <div>Address 4578 Marmora Road, Glasgow, D04 89GR</div>
-                        <div>Phones (800) 123-0045 (800) 123-0045</div>
-                        <div>E-mail info@demolink.org</div>
-                        <div>We are open Mn-Fr: 10 am-8 pm</div>
-                      </Grid.Column>
-                    </Grid.Row>
-                  </Grid>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-          </Container>
-        </Container>
-      </Container>
-    )
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6 col-lg-6 leftSideBox">
+            <div className="row noMar width100P">
+              <SliderComponent />
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-6 rightSideBox">
+            <div className=" row noMar formContainer">
+              <div className="col-12 noPad formHeading">Sign In</div>
+              <div className="col-12 noPad form-group">
+                <label>User name</label>
+                <input
+                  type="userId"
+                  className="form-control"
+                  aria-describedby="emailHelp"
+                  name="userId"
+                  value={userId}
+                  onChange={this.inputHandler}
+                  onKeyPress={this.enterPressed}
+                />
+              </div>
+              {errorMessage && !userId && (
+                <div className="col-12 noPad error-box">
+                  Fill Correct User Id
+                </div>
+              )}
+              <div className="col-12 noPad form-group">
+                <label>Password</label>
+                <div className="input-group">
+                  <input
+                    type={!isShowPassword ? "password" : "text"}
+                    className="form-control"
+                    name="password"
+                    value={password}
+                    onChange={this.inputHandler}
+                    onKeyPress={this.enterPressed}
+                  />
+                  <div
+                    className="input-group-append cursorPointer"
+                    onClick={() => {
+                      this.setState({ isShowPassword: !isShowPassword });
+                    }}
+                  >
+                    <span className="input-group-text">
+                      <i className="fa fa-eye"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              {errorMessage && !password && (
+                <div className="col-12 noPad error-box">Fill Password</div>
+              )}
+              <div className="col-12 noPad forgorPassword">
+                <span
+                  className="cursorPointer linkText"
+                  onClick={this.forgotPassword}
+                >
+                  Forgot Password?
+                </span>
+              </div>
+              <div className="col-12 noPad">
+                <button
+                  type="submit"
+                  onClick={() => this.logIn()}
+                  disabled={this.state.disableButton}
+                  className="btn btn-primary"
+                >
+                  Login
+                </button>
+              </div>
+              {errorMessage && responseMessage && (
+                <div className="col-12 noPad error-box margin-t-0">
+                  {errorMessage}
+                </div>
+              )}
+              <div className="col-12 noPad centerTextToOtherPage">
+                <label>
+                  Don't have an account?{" "}
+                  <span
+                    className="cursorPointer linkText"
+                    onClick={this.goToSignup}
+                  >
+                    Sign Up
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
-export default withRouter(LoginComponent)
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.isAuthenticated,
+  };
+};
+const mapStateToDispatch = (dispatch) => {
+  return {
+    dispatch_loginSucceed: (payload) =>
+      dispatch({ type: ActionTypes.LOGIN_SUCCEED, payload: payload }),
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapStateToDispatch
+)(withRouter(LoginComponent));

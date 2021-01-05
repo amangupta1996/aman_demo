@@ -6,13 +6,17 @@
 // init project
 var express = require('express');
 var app = express();
+
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('build'));
 
 // http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function(request, response) {
+app.get("*", function(request, response) {
+  response.sendFile(__dirname + '/app/index.html');
+});
 
-    console.log((__dirname + '/app/index.html'));
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/", function(request, response) {
   response.sendFile(__dirname + '/app/index.html');
 });
 

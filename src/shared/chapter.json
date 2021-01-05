@@ -1,0 +1,2590 @@
+[
+    {
+        "id"        : 0,
+        "subject"   : "Matematika",
+        "slug"      : "Matematika",
+        "img_src"   : "icon_mtk.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Bilangan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Himpunan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Persamaan dan Pertidaksamaan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 1,
+        "subject"   : "Ilmu Pengetahuan Alam",
+        "slug"      : "IPA",
+        "img_src"   : "icon_ipa.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 2,
+        "subject"   : "Ilmu Pengetahuan Social",
+        "slug"      : "IPS",
+        "img_src"   : "icon_ips.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 3,
+        "subject"   : "Bahasa Indonesia",
+        "slug"      : "B. Indo",
+        "img_src"   : "icon_indonesia.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 4,
+        "subject"   : "Bahasa Inggris",
+        "slug"      : "B. Ing",
+        "img_src"   : "icon_inggris.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 5,
+        "subject"   : "Pendidikan Agama & Budi Pekerti",
+        "slug"      : "Agama",
+        "img_src"   : "icon_agama.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 6,
+        "subject"   : "Pendidikan Pancasila & Kewarganegaraan",
+        "slug"      : "PPKn",
+        "img_src"   : "icon_ppkn.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 7,
+        "subject"   : "Seni Budaya",
+        "slug"      : "Seni Budaya",
+        "img_src"   : "icon_seni_budaya.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 8,
+        "subject"   : "Teknologi Informasi & Komunikasi",
+        "slug"      : "TIK",
+        "img_src"   : "icon_tik.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id"        : 9,
+        "subject"   : "Pendidikan Jasmani, Olahraga & Kesehatan",
+        "slug"      : "PJOK",
+        "img_src"   : "icon_pjok.png",
+        "chapter"   : [
+            {
+                "id"        : 0,
+                "subject"   : "Objek IPA dan Pengamatannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 1,
+                "subject"   : "Klarifikasi Mahluk Hidup",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 2,
+                "subject"   : "Klarifikasi Materi & Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 3,
+                "subject"   : "Suhu dan Perubahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 4,
+                "subject"   : "Kalor dan Perpindahannya",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            },
+            {
+                "id"        : 5,
+                "subject"   : "Energi dalam Sistem Kehidupan",
+                "child"     : [
+                    {
+                        "id"        : 0,
+                        "subject"   : "Penyelidikan IPA",
+                        "content"   : 0,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 1,
+                        "subject"   : "Pengukuran sebagai Bagian dari Pengamatan",
+                        "content"   : null,
+                        "children"  : [
+                            {
+                                "id"        : 0,
+                                "subject"   : "Pengukuran",
+                                "content"   : 1
+                            },
+                            {
+                                "id"        : 1,
+                                "subject"   : "Satuan Baku dan Tidak Baku",
+                                "content"   : 2
+                            }
+                        ]
+                    },
+                    {
+                        "id"        : 2,
+                        "subject"   : "Besaran Pokok",
+                        "content"   : 3,
+                        "children"  : null
+                        
+                    },
+                    {
+                        "id"        : 3,
+                        "subject"   : "Besaran Turunan",
+                        "content"   : 4,
+                        "children"  : null
+                        
+                    }
+                ]
+            }
+        ]
+    }
+]

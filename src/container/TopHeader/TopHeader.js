@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import cookies from 'react-cookies';
-import {
-    Grid,
-    Container,
-} from 'semantic-ui-react';
-import './TopHeader.css';
+import './TopHeader.scss';
 import { withRouter } from 'react-router-dom';
 import * as RoutePath from '../../shared/utils/routeLink';
 import * as ActionTypes from '../../store/actions/actionTypes';
@@ -18,11 +14,28 @@ class TopHeader extends Component {
 
     componentDidMount() {
 
+        this.getUserInfo();
+
+    }
+    logout = () => {
+        // remove all data from storage
+    }
+
+    componentDidUpdate(prevProps) {
+       
     }
 
     redirectHandler = name => {
         if (this.props.history.location.pathName !== name) {
             switch (name) {
+                case RoutePath.SIGNIN: {
+                    this.props.history.push(RoutePath.SIGNIN);
+                    break;
+                }
+                case RoutePath.SIGNUP: {
+                    this.props.history.push(RoutePath.SIGNUP);
+                    break;
+                }
                 case RoutePath.DASHBOARD: {
                     this.props.history.push(RoutePath.DASHBOARD);
                     break;
@@ -33,23 +46,33 @@ class TopHeader extends Component {
         }
     };
 
+    getUserInfo = () => {
+        if (cookies.load('dianauthtoken')) {
+
+            console.log('Hiii');
+
+            this.setState({
+                isUserPresent: true
+            })
+
+        }
+    }
+
+    becomeMentor = () => {
+        this.redirectHandler(RoutePath.SIGNUP)
+    };
+    goToSignin = () => {
+        this.redirectHandler(RoutePath.SIGNIN)
+    };
+    
+
+    goToDashboard = () => {
+        this.redirectHandler(RoutePath.DASHBOARD)
+    };
+
     render() {
         return (
-            <React.Fragment>
-                <div className="fullBg noMar">
-                <Container>
-                    {/* header start */}
-                    <Grid columns={1} divided>
-                        <Grid.Row className="margin-t-b-3">
-                            <Grid.Column>
-                                <h1>LOGO</h1>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
-                    {/* header ends */}
-                </Container>
-                </div>
-            </React.Fragment>
+            <div></div>
         );
     }
 }

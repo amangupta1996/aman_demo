@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.052" height="23.288" viewBox="0 0 26.052 23.288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #034aa6;
+      }
+    </style>
+  </defs>
+  <g id="Group_1830" data-name="Group 1830" transform="translate(-1052 -34)">
+    <g id="Group_2929" data-name="Group 2929">
+      <path id="Icon_awesome-plus-circle" data-name="Icon awesome-plus-circle" class="cls-1" d="M6.479.563A5.917,5.917,0,1,0,12.4,6.479,5.916,5.916,0,0,0,6.479.563ZM9.915,7.147a.287.287,0,0,1-.286.286H7.433V9.628a.287.287,0,0,1-.286.286H5.811a.287.287,0,0,1-.286-.286V7.433H3.33a.287.287,0,0,1-.286-.286V5.811a.287.287,0,0,1,.286-.286H5.525V3.33a.287.287,0,0,1,.286-.286H7.147a.287.287,0,0,1,.286.286V5.525H9.628a.287.287,0,0,1,.286.286Z" transform="translate(1065.656 44.893)"/>
+      <path id="Icon_material-library-books" data-name="Icon material-library-books" class="cls-1" d="M26.384,3h-14.9A2.651,2.651,0,0,0,9,5.777V22.441a2.651,2.651,0,0,0,2.483,2.777h12.59c-3.188-4.632-1.819-11.319,4.795-11.406V5.777A2.651,2.651,0,0,0,26.384,3ZM23.143,15.5H12.725V12.72H23.143Zm-2.967,5.554h-7.45V18.275h7.45ZM25.143,9.943H12.725V7.166H25.143Z" transform="translate(1043 31)"/>
+    </g>
+  </g>
+</svg>
